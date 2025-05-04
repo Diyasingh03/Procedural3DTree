@@ -153,6 +153,27 @@ void GenerateFlower(Canvas2D& flowerCanvas, GLTriangleMesh& flowerMesh)
 			flowerMesh.AppendMeshTransformed(basePetal, transform);
 		}
 	}
+	//GLTriangleMesh centerDisk;
+	//int centerSegments = 16; // Number of segments for the disk
+	//float centerRadius = 0.1f; // Radius of the disk
+	//glm::fvec3 centerNormal{ 0.0f, 0.0f, 1.0f };
+
+	//for (int i = 0; i < centerSegments; i++) {
+	//	float angle = glm::radians(360.0f / centerSegments * i);
+	//	float nextAngle = glm::radians(360.0f / centerSegments * (i + 1));
+
+	//	glm::fvec3 p1 = glm::fvec3(0.0f, 0.0f, 0.0f); // Center point
+	//	glm::fvec3 p2 = glm::fvec3(centerRadius * cos(angle), centerRadius * sin(angle), 0.0f);
+	//	glm::fvec3 p3 = glm::fvec3(centerRadius * cos(nextAngle), centerRadius * sin(nextAngle), 0.0f);
+
+	//	centerDisk.AddVertex(p1, centerNormal, glm::fvec4(1.0f, 1.0f, 0.0f, 1.0f), glm::fvec4(0.5f, 0.5f, 0.0f, 0.0f)); // Yellow center
+	//	centerDisk.AddVertex(p2, centerNormal, glm::fvec4(1.0f, 1.0f, 0.0f, 1.0f), glm::fvec4(0.5f, 0.5f, 0.0f, 0.0f));
+	//	centerDisk.AddVertex(p3, centerNormal, glm::fvec4(1.0f, 1.0f, 0.0f, 1.0f), glm::fvec4(0.5f, 0.5f, 0.0f, 0.0f));
+
+	//	centerDisk.DefineNewTriangle(i * 3, i * 3 + 1, i * 3 + 2);
+	//}
+
+
 
 	// Scale the entire flower
 	flowerMesh.ApplyMatrix(glm::scale(glm::mat4{ 1.0f }, glm::fvec3{ 0.5f }));
