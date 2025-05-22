@@ -6,7 +6,7 @@ Created by Denny Lindberg for the course TNM084 and modified by Diya Singh for C
 # Features
 
 - C++17
-- For Windows (Visual Studio 2017)
+- For Windows (Visual Studio)
 - OpenGL 3.3
 
 - Full scene with camera turntable
@@ -41,6 +41,8 @@ Solution placed in builds/
 **Bresenham line drawing algorithm** - Referenced: https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#C.2B.2B
 
 **Evan's grid shader** - Slightly modified: http://madebyevan.com/shaders/grid/
+
+**Denny Lindbergg's Tree Generator** - Modified: https://github.com/DennyLindberg/Tree-Generator
 
 
 ## Folder structure

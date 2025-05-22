@@ -10,5 +10,6 @@
 *.user
 *.opensdf
 *.DS_Store
+.vs
 
 binaries/*
