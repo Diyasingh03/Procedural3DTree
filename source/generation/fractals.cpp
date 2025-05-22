@@ -360,7 +360,7 @@ void GenerateFractalTree3DBasic(TreeStyle style, UniformRandomGenerator& uniform
 	LSystemString fractalTree;
 	fractalTree.axiom = "B";
 	fractalTree.productionRules['B'] = "AAC";
-	fractalTree.productionRules['C'] = (style == TreeStyle::Slim) ? "AA[%+B][%++B][%+++B]%B" : "A[%+B][%++B][%+++B]%B";
+	fractalTree.productionRules['C'] = (style == TreeStyle::Slim) ? "AA[%+B][%++B][%+++B]%A" : "A[%+B][%++B][%+++B]%B+B";
 
 	using Turtle = Turtle3D<FractalTree3DProps>;
 	Turtle turtle;

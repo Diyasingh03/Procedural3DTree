@@ -89,7 +89,6 @@ printf(R"(
         S:              Take screenshot
 
         G:              Generate new tree with current settings
-        T:              Toggle between default and slimmer tree style
         Up arrow:       Increase L-system iterations (bigger tree)
         Down arrow:     Decrease L-system iterations (smaller tree)
         Left arrow:     Decrease branch divisions

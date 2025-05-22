@@ -24,6 +24,7 @@ void GenerateLeaf(Canvas2D & leafCanvas, GLTriangleMesh& leafMesh)
 	glm::fvec2 previous = leafHull[0];
 	for (int i = 1; i < leafHull.size(); i++)
 	{
+		
 		leafCanvas.DrawLine(leafHull[i - 1], leafHull[i], leafLineColor);
 	}
 	leafCanvas.DrawLine(leafHull.back(), leafHull[0], leafLineColor);
@@ -427,7 +428,7 @@ void GenerateNewTree(GLLine& skeletonLines, GLTriangleMesh& branchMeshes, GLTria
 					int lastIndex = int(branchNodes.size() - 1);
 					
 					// Calculate how many flowers to add based on branch depth and length
-					int numFlowers = 1 + int(branches[b].depth * 0.5f);  // More flowers for deeper branches
+					int numFlowers = 1 + int(branches[b].depth * 0.5f);
 					
 					// Add flowers starting from the last node and moving backwards
 					for (int i = 0; i < numFlowers; i++)
